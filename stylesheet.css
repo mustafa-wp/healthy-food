@@ -98,7 +98,7 @@ header button {
 
 .VERY-TASTY,
 .services {
-    padding: 70px 0;
+    padding: 50px 0;
 }
 
 .TESTIMONIAL-hed,
@@ -146,7 +146,7 @@ header button {
     display: flex;
     width: 80%;
     margin: auto;
-    max-height: 600px;
+    max-height: max-content;
     height: auto;
 }
 
@@ -284,7 +284,7 @@ header button {
 
 .Contact,
 .TESTIMONIAL {
-    padding: 70px 0;
+    padding: 50px 0;
 }
 
 .TESTIMONIAL-item-img {
@@ -359,7 +359,6 @@ header button {
     color: #fc5d35 !important;
     border: 1px solid #fc5d35 !important;
 }
-
 
 .footer {
     background: #fff;
@@ -456,44 +455,122 @@ header button {
 .Contact-item {
     margin: auto;
 }
-/************/
 
-  /************************/
-  .navbar img:hover {
+/************/
+body:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 999999;
+    background: white url("./Images/logo.png") no-repeat center;
+    background-size: 150px;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    animation-name: fade-in;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    border: none;
+    pointer-events: none;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    70% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    90% {
+        opacity: 0.3;
+        transform: scale(0.8);
+    }
+
+    100% {
+        opacity: 0;
+        transform: scale(0.6);
+    }
+}
+
+.flex-col {
+    background: var(--body);
+}
+
+.s-block {
+    margin-top: 2rem;
+    background: unset;
+}
+
+@keyframes scrollBrands {
+    0% {
+        background-position-x: 0;
+    }
+
+    50% {
+        background-position-x: 35000px;
+    }
+
+    100% {
+        background-position-x: 0;
+    }
+}
+
+/************************/
+.navbar img:hover {
     -webkit-animation: blink-1 0.6s both;
     animation: blink-1 0.6s both;
-    }
-    
-    @-webkit-keyframes blink-1 {
-    
+}
+
+@-webkit-keyframes blink-1 {
+
     0%,
     50%,
     100% {
-    opacity: 1;
+        opacity: 1;
     }
-    
+
     25%,
     75% {
-    opacity: 0;
+        opacity: 0;
     }
-    }
-    
-    @keyframes blink-1 {
-    
+}
+
+@keyframes blink-1 {
+
     0%,
     50%,
     100% {
-    opacity: 1;
+        opacity: 1;
     }
-    
+
     25%,
     75% {
-    opacity: 0;
+        opacity: 0;
     }
-    }
-    
-    
+}
+
 /****************************/
+#services-item-img1:hover {
+    filter: invert(71%) sepia(81%) saturate(485%) hue-rotate(0deg) brightness(101%) contrast(101%);
+
+}
+
+#services-item-img2:hover {
+    filter: invert(18%) sepia(56%) saturate(4474%) hue-rotate(272deg) brightness(90%) contrast(97%);
+
+}
+
+#services-item-img3:hover {
+    filter: invert(29%) sepia(90%) saturate(1735%) hue-rotate(308deg) brightness(97%) contrast(104%);
+
+}
+
 @media only screen and (max-width: 768px) {
     .footer {
         align-items: center;
@@ -506,9 +583,11 @@ header button {
     .nav-links {
         gap: 12px;
     }
+
     header button {
         display: none;
     }
+
     .Contact-item-img img {
         max-width: 100%;
         height: auto;
@@ -520,11 +599,18 @@ header button {
     }
 
     section {
-        padding: 40px 0 !important;
+        padding-bottom: 20px;
+        padding-top: 0;
     }
 
     .col-6 h1 {
-        font-size: 3rem;
+        font-size: 38px;
+    }
+
+    .TESTIMONIAL-hed h1,
+    .Fresh-Fruits-hed h1,
+    .services-hed h1 {
+        font-size: 38px;
     }
 
     .social-icons {
@@ -557,10 +643,15 @@ header button {
         display: block;
     }
 
+    .TESTIMONIAL-item-img img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
     .services-content {
         flex-direction: column;
-        max-width: 100%;
-        width: 95%;
+        width: 100%;
         margin: auto;
     }
 
@@ -582,19 +673,22 @@ header button {
     .services-item-img {
         width: 100%;
         height: auto;
-        margin-bottom: 20px;
+        margin-bottom: 5px;
     }
 
     .services-item h2 {
-        font-size: 1rem;
+        font-size: 25px;
+        padding: 10px 0;
     }
 
-    .services-button {
-        margin-top: 100%;
-    }
     .services-item p {
-        font-size: 15px;
+        font-size: 16px;
+        line-height: 1.5;
+        width: 95%;
+        margin: auto;
+        padding: 10px 0;
     }
+
     .Fresh-Fruits-hed {
         padding-bottom: 2rem;
     }
@@ -624,7 +718,7 @@ header button {
 
     .Contact-content {
         display: flex;
-        gap: 0rem;
+        gap: 2rem;
         align-items: center;
         justify-content: flex-start;
         flex-direction: column-reverse;
@@ -662,6 +756,10 @@ header button {
     footer .container {
         max-width: 100%;
         width: 100%;
+    }
+
+    header {
+        padding-bottom: 2px;
     }
 }
 
@@ -715,9 +813,11 @@ li a:hover {
     cursor: pointer;
     transition: all 0.3s ease;
 }
+
 .Fresh-Fruits-item button a {
     color: #ffffff !important;
 }
+
 .Fresh-Fruits-item button:hover {
     background-color: #fc5d35 !important;
     transition: all 0.3s ease;
