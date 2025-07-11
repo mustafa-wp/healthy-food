@@ -1,0 +1,789 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1rem;
+}
+
+li a {
+    color: #000000;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+li {
+    list-style: none;
+}
+
+li a:hover {
+    color: #050505;
+}
+
+.container {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 900;
+    padding-bottom: 20px;
+    background-color: #ffffff;
+}
+
+header button {
+    background: #050505;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+.row {
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.col-6 h1 {
+    line-height: 1.5;
+    font-size: 4rem;
+    padding: 4px;
+    margin-bottom: 10px;
+}
+
+.col-6 p {
+    line-height: 1.6;
+    font-size: 16px;
+    padding: 4px;
+    margin-bottom: 10px;
+}
+
+.col-6 button:first-of-type {
+    background-color: #fc5d35 !important;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border: none;
+}
+
+.col-6 button:last-of-type {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border: none;
+}
+
+.VERY-TASTY,
+.services {
+    padding: 70px 0;
+}
+
+.TESTIMONIAL-hed,
+.Fresh-Fruits-hed,
+.services-hed {
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    padding-bottom: 4rem;
+}
+
+.TESTIMONIAL-hed h1,
+.Fresh-Fruits-hed h1,
+.services-hed h1 {
+    line-height: 1.5;
+    font-size: 3rem;
+    padding: 4px;
+    margin-bottom: 10px;
+}
+
+.TESTIMONIAL-hed,
+.Fresh-Fruits-hed p,
+.services-hed p {
+    line-height: 1.6;
+    font-size: 16px;
+    padding: 4px;
+    margin-bottom: 10px;
+}
+
+.services-hed button:first-of-type {
+    background-color: #fc5d35 !important;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border: none;
+}
+
+.services-hed button:last-of-type {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+    border: none;
+}
+
+.services-content {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    max-height: 600px;
+    height: auto;
+}
+
+.services-item {
+    width: 30%;
+    border: 1px solid #c2bfbf;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.services-item-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.services-item h2 {
+    margin-bottom: 20px;
+}
+
+.services-item p {
+    line-height: 1.4;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #000000;
+}
+
+.services-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    text-align: center;
+}
+
+.services-button button {
+    border: none;
+    background-color: #000000 !important;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+}
+
+.services-item:hover {
+    border-top: 5px solid #fc5d35 !important;
+    transition: all 0.3s ease;
+}
+
+.services-item:hover h2 {
+    color: #fc5d35 !important;
+    transition: all 0.3s ease;
+}
+
+.Fresh-Fruits-item {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: auto;
+}
+
+.Fresh-Fruits-item img {
+    width: 100%;
+    height: auto;
+}
+
+.Fresh-Fruits-item h2 {
+    margin-bottom: 20px;
+}
+
+.Fresh-Fruits-item p {
+    line-height: 1.4;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #000000;
+    width: 70%;
+}
+
+.Fresh-Fruits-item button {
+    border: none;
+    background-color: #000000 !important;
+    color: #ffffff;
+    padding: 0.5rem 1rem;
+}
+
+.Fresh-Fruits-item:hover h2 {
+    color: #fc5d35 !important;
+    transition: all 0.3s ease;
+}
+
+.Fresh-Fruits-item:nth-child(2),
+.Fresh-Fruits-item:nth-child(3),
+.Fresh-Fruits-item:nth-child(1) {
+    margin-bottom: 30px;
+}
+
+.Fresh-Fruits-item button:hover {
+    background-color: transparent !important;
+    transition: all 0.3s ease;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.VERY-TASTY {
+    min-height: 550px;
+    background-image: -webkit-gradient(linear,
+            left bottom,
+            left top,
+            from(#222),
+            to(rgba(34, 34, 34, 0))),
+        url("./Images/tasty.png");
+    background-image: linear-gradient(360deg, #222, rgba(34, 34, 34, 0)),
+        url("./Images/tasty.png");
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    position: relative;
+}
+
+.VERY-TASTY .container {
+    max-width: 100%;
+}
+
+.VERY-TASTY-hed h1 {
+    text-align: center;
+    color: #ffffff;
+    width: 100%;
+    margin: auto;
+    font-size: 16vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Contact,
+.TESTIMONIAL {
+    padding: 70px 0;
+}
+
+.TESTIMONIAL-item-img {
+    height: auto;
+    border-radius: 5px;
+    margin: auto;
+    text-align: center;
+}
+
+.TESTIMONIAL-item-img p {
+    margin: 5px 0;
+    font-size: 20px;
+    color: #000000;
+}
+
+.TESTIMONIAL-item {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    line-height: 1.4;
+    font-size: 16px;
+}
+
+.Contact.container {
+    max-width: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.Contact-content {
+    display: flex;
+    gap: 9rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Contact-item form {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    width: 304px;
+    height: 400px;
+}
+
+.Contact-item form input {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-bottom: 1px solid #000;
+    border-radius: 5px;
+}
+
+.Contact-item form textarea {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-bottom: 1px solid #000;
+    border-radius: 5px;
+}
+
+.Contact-item form button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #fc5d35 !important;
+    color: #ffffff;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+.Contact-item form button:hover {
+    background-color: transparent !important;
+    transition: all 0.3s ease;
+    color: #fc5d35 !important;
+    border: 1px solid #fc5d35 !important;
+}
+
+
+.footer {
+    background: #fff;
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-column {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+}
+
+.footer-column h4 {
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #000;
+}
+
+.footer-column p {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.6;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+}
+
+.subscribe-box input[type="text"] {
+    padding: 8px;
+    width: 80%;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.subscribe-box button {
+    padding: 8px 16px;
+    background-color: #ff642f;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-column-list {
+    list-style: none;
+    font-size: 14px;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.footer-column-p {
+    display: inline-block;
+    white-space: wrap;
+    max-width: 50%;
+    text-overflow: ellipsis;
+}
+
+.Contact .container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 0;
+    margin: auto;
+}
+
+.Contact-item-img {
+    width: 70%;
+    height: auto;
+    text-align: end;
+    margin: auto;
+    text-align: center;
+}
+
+.Contact-item-img img {
+    width: 80%;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.Contact-item {
+    margin: auto;
+}
+/************/
+body:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 999999;
+    background: url("./Images/logo.png") no-repeat center;
+    background-size: 150px; /* حجم أصغر للشعار */
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    animation-name: fade-in;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    border: none;
+    pointer-events: none;
+  }
+  
+  @keyframes fade-in {
+    0% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  
+    70% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  
+    90% {
+      opacity: 0.3;
+      transform: scale(0.8);
+    }
+  
+    100% {
+      opacity: 0;
+      transform: scale(0.6);
+    }
+  }
+  
+  /* باقي تنسيقات الصفحة */
+  .flex-col {
+    background: var(--body);
+  }
+  
+  .s-block {
+    margin-top: 2rem;
+    background: unset;
+  }
+  
+  @keyframes scrollBrands {
+    0% {
+      background-position-x: 0;
+    }
+  
+    50% {
+      background-position-x: 35000px;
+    }
+  
+    100% {
+      background-position-x: 0;
+    }
+  }
+  /************************/
+  .navbar img:hover {
+    -webkit-animation: blink-1 0.6s both;
+    animation: blink-1 0.6s both;
+    }
+    
+    @-webkit-keyframes blink-1 {
+    
+    0%,
+    50%,
+    100% {
+    opacity: 1;
+    }
+    
+    25%,
+    75% {
+    opacity: 0;
+    }
+    }
+    
+    @keyframes blink-1 {
+    
+    0%,
+    50%,
+    100% {
+    opacity: 1;
+    }
+    
+    25%,
+    75% {
+    opacity: 0;
+    }
+    }
+    
+    
+/****************************/
+@media only screen and (max-width: 768px) {
+    .footer {
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+        margin-top: 2%;
+        padding: 7px 7px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+    header button {
+        display: none;
+    }
+    .Contact-item-img img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .footer .container {
+        flex-direction: column;
+    }
+
+    section {
+        padding: 40px 0 !important;
+    }
+
+    .col-6 h1 {
+        font-size: 3rem;
+    }
+
+    .social-icons {
+        justify-content: center;
+        padding: 10px 0;
+    }
+
+    header .container {
+        max-width: 100%;
+        padding: 0px 5px;
+        margin: 0;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 1rem 0;
+    }
+
+    .hero-section .row {
+        gap: 2rem;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .hero-section img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .services-content {
+        flex-direction: column;
+        max-width: 100%;
+        width: 95%;
+        margin: auto;
+    }
+
+    .services-item {
+        width: 100%;
+        border: 1px solid #c2bfbf;
+        padding: 6px;
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .services-hed {
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        padding-bottom: 2%;
+    }
+
+    .services-item-img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .services-item h2 {
+        font-size: 1rem;
+    }
+
+    .services-button {
+        margin-top: 100%;
+    }
+    .services-item p {
+        font-size: 15px;
+    }
+    .Fresh-Fruits-hed {
+        padding-bottom: 2rem;
+    }
+
+    .Fresh-Fruits-item {
+        width: 100%;
+        margin: auto;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .Fresh-Fruits-item p {
+        margin: auto;
+        line-height: 1.6;
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .VERY-TASTY {
+        min-height: 260px;
+        padding: 20px 0;
+    }
+
+    .VERY-TASTY-hed h1 {
+        font-size: 4.2vh;
+    }
+
+    .Contact-content {
+        display: flex;
+        gap: 0rem;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: column-reverse;
+    }
+
+    .Contact-content img {
+        margin: auto;
+    }
+
+    .Contact-item {
+        margin-top: 60%;
+    }
+
+    .Contact-item-img {
+        width: 100%;
+    }
+
+    .Contact-item form {
+        display: flex;
+        gap: 1rem;
+        flex-direction: column;
+        width: 215px;
+        height: 300px;
+        margin-top: -104%;
+    }
+
+    .Fresh-Fruits-item button {
+        margin: 15px 0;
+    }
+
+    footer * {
+        text-align: center !important;
+    }
+
+    footer .container {
+        max-width: 100%;
+        width: 100%;
+    }
+}
+
+.footer .container {
+    max-width: 100% !important;
+    width: 80%;
+    margin: auto;
+    padding: 0;
+    display: flex;
+}
+
+.footer {
+    background: linear-gradient(286deg, rgb(254 137 123) 12%, rgb(75 52 35) 99%);
+}
+
+footer * {
+    color: #ffffff !important;
+}
+
+li a:hover {
+    color: #fc5d35 !important;
+}
+
+.subscribe-box:hover button {
+    background-color: transparent !important;
+    transition: all 0.3s ease;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.header-icons:hover button {
+    background-color: transparent !important;
+    transition: all 0.3s ease;
+    color: #000;
+    border: 1px solid #000;
+}
+
+.services-button button:hover {
+    background-color: #fc5d35 !important;
+    transition: all 0.3s ease;
+    color: #ffffff;
+    border: 1px solid #fc5d35;
+}
+
+.footer *:hover {
+    color: #fc5d35;
+}
+
+.social-icons i:hover {
+    color: #000000 !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.Fresh-Fruits-item button a {
+    color: #ffffff !important;
+}
+.Fresh-Fruits-item button:hover {
+    background-color: #fc5d35 !important;
+    transition: all 0.3s ease;
+    color: #ffffff !important;
+    border: 1px solid #fc5d35 !important;
+}
