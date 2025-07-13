@@ -567,7 +567,8 @@ body:after {
 }
 
 #services-item-img3:hover {
-    filter: invert(29%) sepia(90%) saturate(1735%) hue-rotate(308deg) brightness(97%) contrast(104%);
+    filter: invert(86%) sepia(65%) saturate(613%) hue-rotate(20deg) brightness(105%) contrast(95%)
+            drop-shadow(0 0 48px rgba(255, 244, 204, 0.8));
 
 }
 
