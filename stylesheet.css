@@ -465,7 +465,7 @@ body:after {
     left: 0;
     position: fixed;
     z-index: 999999;
-    background: white url("./Images/logo.png") no-repeat center;
+    background: white url("./Images/logo.svg") no-repeat center;
     background-size: 150px;
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
